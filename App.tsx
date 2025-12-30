@@ -6,7 +6,7 @@ import ChatView from './components/ChatView';
 import VoiceView from './components/VoiceView';
 import MapsView from './components/MapsView';
 import VeoView from './components/VeoView';
-import { Activity, ShieldCheck, Heart, Zap, Thermometer, ArrowRight, ShieldAlert, Clock, LayoutDashboard, Brain, AlertOctagon } from 'lucide-react';
+import { Activity, ShieldCheck, Heart, Zap, Thermometer, ArrowRight, ShieldAlert, Clock, LayoutDashboard, Brain, AlertOctagon, History } from 'lucide-react';
 import { analyzeInteractions, analyzeSymptoms } from './services/geminiService';
 import { Logo } from './components/Logo';
 

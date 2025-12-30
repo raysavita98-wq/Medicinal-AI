@@ -159,14 +159,15 @@ export const checkSafetyUpdates = async (medicineName: string) => {
 
 // --- Veo Video Generation ---
 export const generateVideo = async (prompt: string, imageBase64?: string, mimeType?: string) => {
-    const ai = getAI();
-    
     if (window.aistudio && window.aistudio.hasSelectedApiKey) {
         const hasKey = await window.aistudio.hasSelectedApiKey();
         if (!hasKey) {
              await window.aistudio.openSelectKey();
         }
     }
+    
+    // Create new instance strictly for Veo as per guidelines to pick up fresh key
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
     
     try {
         let videoOperation;
