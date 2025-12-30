@@ -1,0 +1,9 @@
+{
+  "name": "Medicinal AI",
+  "description": "An ultra-premium, dark-themed AI healthcare companion featuring medicine scanning, real-time voice intelligence, and personalized medical insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
